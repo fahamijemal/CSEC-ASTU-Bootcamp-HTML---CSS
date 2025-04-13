@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookFlix - Your Book Destination</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>BookFlix</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Genres</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Dive Into a World of Stories</h2>
+      <p>Explore the best books handpicked for you</p>
+      <a href="#booking" class="btn">Get Your Book</a>
+    </div>
+  </section>
+
+  <!-- Books Grid -->
+  <section class="books">
+    <h2 class="section-title">Top Picks</h2>
+    <div class="book-grid">
+      <div class="book-card">
+        <img src="./images/photo1.png" alt="The Lost Realm">
+        <h3>The Lost Realm</h3>
+        <p>Fantasy, Adventure</p>
+        <a href="#" class="btn-small">Read Now</a>
+      </div>
+      <div class="book-card">
+        <img src="./images/photo2.png" alt="Love & Letters">
+        <h3>Love & Letters</h3>
+        <p>Romance, Drama</p>
+        <a href="#" class="btn-small">Read Now</a>
+      </div>
+      <div class="book-card">
+        <img src="./images/photo3.png" alt="Mind Hacks">
+        <h3>Mind Hacks</h3>
+        <p>Self-help, Psychology</p>
+        <a href="#" class="btn-small">Read Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking" class="booking">
+    <h2 class="section-title">Request a Book</h2>
+    <form class="booking-form">
+      <div class="form-group">
+        <label for="book">Choose Book:</label>
+        <select id="book" name="book" required>
+          <option value="">-- Select a Book --</option>
+          <option value="lostrealm">The Lost Realm</option>
+          <option value="loveletters">Love & Letters</option>
+          <option value="mindhacks">Mind Hacks</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      </div>
+      <button type="submit" class="btn">Request Now</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 BookFlix. All rights reserved.</p>
+  </footer>
+</body>
+</html>

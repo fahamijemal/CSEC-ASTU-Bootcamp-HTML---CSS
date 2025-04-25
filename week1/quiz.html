@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+</head>
+<body>
+  <script>
+    const quiz = [
+      { question: "What is 2 + 2?", answer: "4" },
+      { question: "What is the capital of France?", answer: "Paris" },
+      { question: "What color is the sky?", answer: "Blue" }
+    ];
+    function runQuiz() {
+      let score = 0;
+
+      for (let i = 0; i < quiz.length; i++) {
+        const userAnswer = prompt(quiz[i].question);
+        if (userAnswer && userAnswer.trim().toLowerCase() === quiz[i].answer.toLowerCase()) {
+          alert("Correct!");
+          score++;
+        } else {
+          alert(`Wrong! The correct answer was ${quiz[i].answer}`);
+        }
+      }
+
+      alert(`You got ${score} out of ${quiz.length} correct!`);
+    }
+
+    runQuiz();
+  </script>
+</body>
+</html>
